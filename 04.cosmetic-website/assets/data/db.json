@@ -1,0 +1,95 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "Serum",
+      "price": "44",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "imageUrl": "./assets/images/PROD_1206910_1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Nail lacquer",
+      "price": 3,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "imageUrl": "https://www.avon.com/assets/product/en/md/PROD_1208581_1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Parfum",
+      "price": 48,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "imageUrl": "https://www.avon.com/assets/product/en/md/PROD_1202605_1.jpg"
+    },
+    {
+      "id": 5,
+      "name": "LXNEV platinum",
+      "price": 45,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "imageUrl": "https://www.avon.com/assets/product/en/md/PROD_1204113_1.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Glimmer multi",
+      "price": 15,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "imageUrl": "https://www.avon.com/assets/product/en/md/PROD_1202699_1.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Anew hydra fusion",
+      "price": 34,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "imageUrl": "https://www.avon.com/assets/product/en/md/PROD_1201145.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Cashmere ultimate",
+      "price": 22,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "imageUrl": "https://www.avon.com/assets/product/en/md/PROD_1207059_1.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Cashmere Under",
+      "price": 22,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "imageUrl": "https://www.avon.com/assets/product/en/md/PROD_1207335_1.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Avon mattitude liquid",
+      "price": 13,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "imageUrl": "https://www.avon.com/assets/product/en/md/fa8719bb-46d0-48b0-9ba0-03b8d42c6f4c.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Glimmer matte",
+      "price": 15,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "imageUrl": "https://www.avon.com/assets/product/en/md/PROD_1207946_1.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Glimmer lip polish",
+      "price": 14,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "imageUrl": "https://www.avon.com/assets/product/en/md/PROD_1207297_1.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Love glov",
+      "price": 30,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "imageUrl": "https://www.avon.com/assets/product/en/md/PROD_1202462_1.jpg"
+    },
+    {
+      "description": "Hi",
+      "name": "My name is leman :))",
+      "price": "20",
+      "imageUrl": "./assets/images/PROD_1201135.jpg",
+      "id": 14
+    }
+  ]
+}
