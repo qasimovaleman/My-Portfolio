@@ -108,6 +108,7 @@ nav ul a:hover {
   align-items: center;
 }
 .heartIcon {
+ 
   color: brown;
 }
 .tableImage {
@@ -154,22 +155,22 @@ form button {
   box-shadow: 7px 9px 6px lightcoral;
   border: 2px solid pink;
 }
-.loadMore{
-    width: 160px;
-    height: 50px;
-    padding: 10px 20px;
-    cursor: pointer;
-    border: 2px solid transparent;
-    border-radius: 6px;
-    background-color: hotpink;
-    transition: all 600ms;
-    margin-top: 30px;
-    margin-bottom: 90px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.loadMore {
+  width: 160px;
+  height: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background-color: hotpink;
+  transition: all 600ms;
+  margin-top: 30px;
+  margin-bottom: 90px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
-.loadMore:hover{
-    border: 2px solid hotpink;
-    background-color: antiquewhite;
-    color: hotpink;
-
+.loadMore:hover {
+  border: 2px solid hotpink;
+  background-color: antiquewhite;
+  color: hotpink;
 }

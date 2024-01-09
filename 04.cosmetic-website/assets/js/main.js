@@ -46,20 +46,20 @@ function drawCards(data) {
     titleLeftDivElement.classList = "titleLeft";
     //
     let favIconElement = document.createElement("i");
-    favIconElement.classList = "heartIcon";
+    // favIconElement.classList = "heartIcon";
     //
     const favoritObj = favoritedProducts.find((item) => item.id === element.id);
 
     favIconElement.className = favoritObj
-      ? "fa-solid fa-heart"
-      : "fa-regular fa-heart";
+      ? "fa-solid fa-heart heartIcon"
+      : "fa-regular fa-heart heartIcon";
 
     favIconElement.addEventListener("click", function () {
-      this.className === "fa-regular fa-heart"
-        ? (this.className = "fa-solid fa-heart")
-        : (this.className = "fa-regular fa-heart");
+      this.className === "fa-regular fa-heart heartIcon"
+        ? (this.className = "fa-solid fa-heart heartIcon")
+        : (this.className = "fa-regular fa-heart heartIcon");
       let favorites = getFavoritesFromLocalStorages();
-      const favIndex = favorites.favIndex((item) => item.id === element.id);
+      const favIndex = favorites.findIndex((item) => item.id === element.id);
       if (favIndex === -1) {
         favorites.push(element);
       } else {

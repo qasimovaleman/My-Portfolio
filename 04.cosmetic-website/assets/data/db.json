@@ -90,6 +90,13 @@
       "price": "20",
       "imageUrl": "./assets/images/PROD_1201135.jpg",
       "id": 14
+    },
+    {
+      "description": "",
+      "name": "",
+      "price": "",
+      "imageUrl": "./assets/images/undefined",
+      "id": 15
     }
   ]
 }
