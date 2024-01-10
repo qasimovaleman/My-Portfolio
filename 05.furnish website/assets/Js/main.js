@@ -1,6 +1,9 @@
 const products = document.querySelector(".products");
 const BASE_URL = `http://localhost:8080`;
 const favCount = document.querySelector(".fav-count");
+const searchInput = document.querySelector(".search");
+let arr;
+
 //
 //
 const favoritedProducts = getFavoritesFromLocaleStorage();
@@ -10,6 +13,8 @@ calculateFavCount(favoritedProducts.length);
 async function getData() {
   const response = await axios(`${BASE_URL}/cards`);
   console.log(response.data);
+  arr = response.data;
+
   drawCards(response.data);
 }
 getData("myCard");
@@ -84,3 +89,12 @@ function calculateFavCount(count) {
   favCount.textContent = count;
 }
 //
+////////////////
+searchInput.addEventListener("input", function (e) {
+  e.preventDefault();
+  let filtered = arr.filter((item) =>
+    item.title.toLowerCase().includes(e.target.value.toLowerCase())
+  );
+  drawCards(filtered);
+  console.log(filtered);
+});
