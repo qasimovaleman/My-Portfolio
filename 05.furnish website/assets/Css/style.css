@@ -243,3 +243,77 @@ nav a:hover {
 .card-12 .vergul h2 {
   color: #cf7500;
 }
+
+.blogCardParent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.blogCard {
+  width: 21%;
+  height: 250px;
+}
+.blogCard:hover {
+  cursor: pointer;
+}
+.blogCard img {
+  width: 100%;
+  height: 250px;
+}
+.blogSection i {
+  color: #cf7500;
+}
+.blogSection p {
+  color: #cf7500;
+}
+.info {
+  height: 250px;
+  background-color: #ebf0f3;
+}
+.infoTop {
+  column-gap: 0.4rem;
+}
+.number {
+  padding-top: 14px;
+}
+.comments,
+.shop,
+.small {
+  padding-left: 14px;
+}
+.small {
+  color: grey;
+}
+footer {
+  margin-top: 60px;
+  background-color: #a0bdce;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+.inputDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search{
+  margin-top: 40px;
+  width: 300px;
+  height: 40px;
+  padding: 5px 15px ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid grey;
+  outline: none;
+}
+.blogText{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
