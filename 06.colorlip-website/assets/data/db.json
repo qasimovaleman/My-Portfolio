@@ -1,37 +1,37 @@
 {
-  "greenCard": [
+  "greencard": [
     {
-      "id": 1,
+      "id": "1",
       "imageUrl": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQm1duHcwgHfrv50IuOBZqEv-Bn__EHDdoxtbf_uyzggCgtdO5u",
       "title": "High Quality Hardware",
       "description": "Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos."
     },
     {
-      "id": 2,
+      "id": "2",
       "imageUrl": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSi20qERt-iwI4kIBF1KjTzyYzu1eFe-J-PFofNVwU0plUKDZpp",
       "title": "Top Data Centers",
       "description": "Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos."
     },
     {
-      "id": 3,
+      "id": "3",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpMTq7f0cpWYw33WqaxY686oA5L5I7Z7uAxP4OwfSfzQzHlKWe",
       "title": "Outstanding Speed",
       "description": "Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos."
     },
     {
-      "id": 4,
+      "id": "4",
       "imageUrl": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRycYavCwlP7__89ukgndjLv-Fq_Ov59fUfPIkcLK1WabbZMfX8",
       "title": "Amazing Uptime",
       "description": "Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos."
     },
     {
-      "id": 5,
+      "id": "5",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSvXOufYJB-ukYAsCm1eFl1hfTSwOZCxsqn1QMMZpc5qCNaE4U",
       "title": "Best Support",
       "description": "Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos."
     },
     {
-      "id": 6,
+      "id": "6",
       "imageUrl": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRery7mRmVngUGYTNhAm9zaXejYQG1M1KDLH8VwCDVGWyqOhsEH",
       "title": "Client Reviews",
       "description": "Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos."

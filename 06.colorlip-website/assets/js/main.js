@@ -4,7 +4,7 @@ let products = [];
 const BASE_URL = `http://localhost:8080`;
 async function getData() {
   try {
-    const response = await axios(`${BASE_URL}/greenCard`);
+    const response = await axios(`${BASE_URL}/greencard`);
     console.log(response.data);
     products = response.data;
     drawProductCards(response.data);
@@ -59,7 +59,7 @@ async function deleteProduct(id, btn) {
   //console.log(id);
   try {
     if (window.confirm("you want to delete product?")) {
-      await axios.delete(`${BASE_URL}/greenCard/${id}`);
+      axios.delete(`${BASE_URL}/greencard/${id}`);
       btn.closest(".productsCard").remove();
     }
   } catch (error) {
