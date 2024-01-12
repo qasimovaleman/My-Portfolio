@@ -1,7 +1,3 @@
-font-family: 'Nunito Sans', sans-serif;
-
-
-
 {
   "greenCard": [
     {
@@ -42,16 +38,3 @@ font-family: 'Nunito Sans', sans-serif;
     }
   ]
 }
-/////////////////////////////////
-         <div class="mycardTop">
-              <div class="mycardImagesDiv">
-                <img
-                  src="./assets/images/person_1 (2).jpg"
-                  alt="foto"
-                  class="mycardImages"
-                />
-              </div>
-              <div>
-                <h4 class="mycard-title">High Quality Hardware</h4>
-              </div>
-           </div>

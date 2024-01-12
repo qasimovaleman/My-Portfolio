@@ -228,23 +228,11 @@ button {
 }
 /* -----------------RESPONSIVE------PART-5---------------- */
 
-/* --------------------------PART-6----------------------- */
-#apiSection {
-  margin: 50px 0;
-}
-
-.chooseDiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* -----------------RESPONSIVE------PART-6---------------- */
-
 /* --------------------------PART-7----------------------- */
 
 #lastSection {
   background-color: #f8f9fa;
-  
+  margin-top: 450px;
 }
 .lastSection {
   display: flex;
@@ -253,41 +241,138 @@ button {
   align-items: center;
   position: relative;
   padding: 70px 0;
-  
 }
 .lastSection img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
 }
-.lastSection h3{
+.lastSection h3 {
   font-weight: 500;
   font-size: 32px;
-  color:#4d4d4d ;
-}
-.lastSection span{
-  font-weight: 400;
-  font-size: 16px;
-  color:#b3b3b3 ;
-  margin-bottom: 30px;
-}
-.lastSection p{
-  font-weight: 400;
-  font-size:18px ;
   color: #4d4d4d;
 }
-footer{
+.lastSection span {
+  font-weight: 400;
+  font-size: 16px;
+  color: #b3b3b3;
+  margin-bottom: 30px;
+}
+.lastSection p {
+  font-weight: 400;
+  font-size: 18px;
+  color: #4d4d4d;
+}
+footer {
   height: 15vh;
   background-color: #4d4d4d;
 }
-.footer{
+.footer {
   color: white;
   padding-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer i{
+.footer i {
   color: maroon;
 }
 /* -----------------RESPONSIVE------PART-7---------------- */
+
+/* --------------------------PART-6-- API--------------------- */
+#apiSection {
+  margin: 50px 0;
+  height: 50vh;
+}
+
+.chooseDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productsLists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.productsCard {
+  padding: 20px 30px;
+  border: 2px solid rgb(224, 215, 215);
+  width: 30%;
+  cursor: pointer;
+  transition: all 600ms;
+}
+.mycardTop {
+  padding-top: 25px;
+  display: flex;
+  column-gap: 1.3rem;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.productsCard:hover {
+  background-color: rgb(76, 173, 76);
+  border: 2px solid rgb(76, 173, 76);
+}
+.productsCard:hover .mycard-title {
+  color: white;
+}
+.productsCard:hover .mycard-description {
+  color: white;
+}
+.mycard-title {
+  font-weight: 500;
+  font-size: 20px;
+  color: #4d4d4d;
+  text-align: center;
+  padding-top: 30px;
+}
+.mycard-description {
+  font-weight: 400;
+  font-size: 16px;
+  color: #b3b3b3;
+}
+.mycardImages {
+  width: 90px;
+  height: 90px;
+}
+.details {
+  height: 40px;
+  width: 120px;
+  border: 1px solid blue;
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 600ms;
+  text-decoration: none;
+}
+.details:hover {
+  background-color: white;
+  color: blue;
+  font-weight: 600;
+}
+
+.delete {
+  height: 40px;
+  width: 120px;
+  border: 1px solid brown;
+  background-color: brown;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 600ms;
+  text-decoration: none;
+}
+.buttonParent {
+  display: flex;
+  margin-top: 15px;
+}
+/* -----------------RESPONSIVE------PART-6---------------- */
