@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerTopLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.headerTopLeft p {
+  text-align: center;
+  padding-top: 35px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #003072;
+}
+.headerTopLeft span {
+  padding-top: 17px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #4c526e;
+}
+.headerTopRight {
+  padding-top: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerBottomLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+}
+.headerBottomLeft a {
+  color: #003072;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.headerBottomRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+}
+.headerBottomRight button {
+  border: 2px solid blue;
+  background-color: white;
+  color: blue;
+  padding: 5px 15px;
+  width: 140px;
+  height: 40px;
+}
+.iconTextDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+}
+.iconTextDiv i {
+  font-size: 2.2rem;
+}
+.iconTextDiv span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #9b9eac;
+}
+.iconTextDiv p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #003072;
+}
+#bgImageSection {
+  background-image: url("../images/h1_hero1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.bgImageSection {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+.bgImageSection h1 {
+  font-weight: 500;
+  font-size: 72px;
+  color: white;
+}
+.bgImageSection span {
+  margin-top: 16px;
+  width: 200px;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  border-bottom: 4px solid white;
+}
+.bgImageSection p {
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+}
+.bgImageSection button {
+  height: 50px;
+  font-weight: 400;
+  font-size: 18px;
+  width: 180px;
+  color: white;
+  border: 2px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 600ms;
+}
+.bgImageSection button:hover {
+  background-color: rgb(88, 88, 209);
+  border: 2px solid rgb(88, 88, 209);
+}
+#servicesSection {
+  margin: 60px 0;
+}
+.servicesText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.3rem;
+}
+.servicesText span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #316ec2;
+}
+.servicesText h3 {
+  text-align-last: center;
+  font-weight: 500;
+  font-size: 40px;
+  color: #003072;
+}
+.servicesText p {
+  text-align-last: center;
+  font-weight: 400;
+  font-size: 18px;
+  color: #4c526e;
+}
+.servicesCardParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+.servicesCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.3rem;
+  width: 20%;
+  background-color: #F3F8FF;
+  padding: 20px 25px;
+ cursor: pointer;
+  transition: all 1s;
+}
+.servicesCard h5{
+color: #003072;
+font-weight: 500;
+font-size: 20px;
+}
+.servicesCard span{
+  font-weight: 400;
+font-size: 16px;
+color: #316ec2;
+}
+.servicesCard i{
+  color: #316ec2;
+ 
+font-size: 16px;
+}
+.iconText{
+  opacity: 0;
+}
+.servicesCard:hover .iconText{
+  opacity: 1;
+}
+#textImageSection{
+  margin: 60px 0;
+}
+.textImageSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textDiv{
+  color: white;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  background-color: blue;
+  padding: 20px 60px;
+}
+
+.textDiv p{
+text-align-last: center;
+}
+.textDiv button{
+width: 130px;
+height: 45px;
+color: white;
+background-color: blue;
+border: 2px solid white;
+border-radius: 3px;
+font-weight: bold;
+}
+.textDiv button:hover{
+  background-color: #316ec2;
+  border: 2px solid #316ec2;
+}
+.textImageSection{
+  width: 100%;
+}
+.imageDiv{
+  width: 50%;
+  
+}
+.imageDiv img{
+  width: 100%;
+  height: 310px;
+}
+.lastSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 40px 0;
+  row-gap: 2rem;
+}
+#lastSection{
+  background-color: #003072;
+}
+.lastSection h3{
+font-weight:500 ;
+font-size: 38px;
+
+}
+.lastSection p{
+  font-weight: 400;
+  font-size:18px ;
+ 
+}
+.lastSection button{
+  font-weight: 400;
+  font-size: 18px;
+  color:white ;
+  height: 45px;
+  width: 160px;
+  background-color: #316ec2;
+  border: 2px solid #316ec2;
+  cursor: pointer;
+  transition: all 600ms;
+}
+.lastSection button:hover{
+  background-color: #5d7ba7;
+  border: 2px solid #5d7ba7;
+}
+/* -------------API------------------- */
+#apiSection {
+  margin: 80px 0;
+}
+.inputDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.inputDiv input{
+  width: 300px;
+  height: 40px;
+  padding: 10px 17px;
+  font-weight: 500;
+}
+::placeholder{
+  color: #003072;
+}
+.productsLists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+}
+.productCard {
+  border: 2px solid #f2f3f8;
+  width: 31%;
+  padding: 20px 25px;
+}
+.product-image {
+  width: 100%;
+}
+.card-title {
+  font-weight: 500;
+  font-size: 24px;
+  color: #003072;
+}
+.card-description {
+  font-weight: 400;
+  font-size: 16px;
+  color: #4c526e;
+}
+.cardButton {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cardButton .edit {
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 600ms;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: white;
+  background-color: green;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 7px;
+}
+.cardButton .deleteBtn {
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 600ms;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: white;
+  background-color: brown;
+}

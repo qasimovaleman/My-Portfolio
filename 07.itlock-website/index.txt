@@ -1,0 +1,48 @@
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Rubik', sans-serif;
+
+
+       <div class="productCard">
+            <div>
+              <img
+                src="./assets/images/blog4.jpg"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <h5 class="card-title">Complexities of modern markets</h5>
+            <span class="card-description"
+              >Lorem ipsum dolor sit amet consectetur.</span
+            >
+            <div class="cardButton">
+              <button class="edit">EDIT</button>
+              <button class="delete">DELETE</button>
+            </div>
+          </div>
+
+
+
+
+
+          {
+  "itCard": [
+    {
+      "id": "1",
+      "imageUrl": "https://preview.colorlib.com/theme/itlock/assets/img/gallery/blog4.jpg",
+      "title": "Complexities of modern markets",
+      "description": "Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos."
+    },
+    {
+      "id": "2",
+      "imageUrl": "https://preview.colorlib.com/theme/itlock/assets/img/gallery/blog5.jpg",
+      "title": "Backup and recovery",
+      "description": "Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos."
+    },
+    {
+      "id": "3",
+      "imageUrl": "https://preview.colorlib.com/theme/itlock/assets/img/gallery/blog6.jpg",
+      "title": "Cyber security",
+      "description": "Lorem ipsum dolor sit amet consectetur is a nice adipisicing elita ssumenda a similique perferendis dolorem eos."
+    }
+  ]
+}
