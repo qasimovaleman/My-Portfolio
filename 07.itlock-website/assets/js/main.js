@@ -1,5 +1,6 @@
 const productsCardLists = document.querySelector(".productsLists");
-//let favProducts = getFavsFromLocaleStorage();
+
+
 let products = [];
 let arr;
 const search = document.querySelector(".search");
@@ -72,5 +73,3 @@ search.addEventListener("input", function (e) {
   console.log(filtered);
 });
 ///////////////////////////////////
-
-////////////////////////////////

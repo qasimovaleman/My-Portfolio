@@ -1,0 +1,305 @@
+//MAIN JS
+const productsCardLists = document.querySelector(".productsLists");
+
+
+let products = [];
+let arr;
+const search = document.querySelector(".search");
+//
+const BASE_URL = `http://localhost:8080`;
+async function getData() {
+  try {
+    const response = await axios(`${BASE_URL}/itCard`);
+    console.log(response.data);
+    products = response.data;
+    drawProductCards(response.data);
+    arr = response.data;
+  } catch (error) {
+    console.log(error);
+  }
+}
+getData();
+///////////////////
+function drawProductCards(data) {
+  productsCardLists.innerHTML = "";
+  data.forEach((element) => {
+    const productCardElement = document.createElement("div");
+    productCardElement.className = "productCard";
+    ///////
+    productCardElement.innerHTML = `
+    <div>
+      <img
+        src="${element.imageUrl}"
+        alt=""
+        class="product-image"
+      />
+    </div>
+    <h5 class="card-title">${element.title}</h5>
+    <span class="card-description"
+      >${element.description}</span
+    >
+    <div class="cardButton">
+      <a class="edit" href="details.html?id=${element.id}">Details</a>
+      
+      <button class="deleteBtn" onclick="deleteProduct(${element.id},this)">DELETE</button>
+      
+    </div>
+ 
+    `;
+    productsCardLists.append(productCardElement);
+  });
+}
+
+//////////////////
+
+async function deleteProduct(id) {
+  console.log(id);
+  try {
+    if (window.confirm("you want to delete product?")) {
+      axios.delete(`${BASE_URL}/itCard/${id}`);
+      // btn.closest(".productsCard").remove();
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+/////////////////////////
+search.addEventListener("input", function (e) {
+  e.preventDefault();
+  let filtered = arr.filter((item) =>
+    item.title.toLowerCase().includes(e.target.value.toLowerCase())
+  );
+  drawProductCards(filtered);
+  console.log(filtered);
+});
+//////////////////////////////////////
+////////////////////////////////////
+//////////////////////////////////
+////////////////////////////////
+//DETAILS JS
+const id = new URLSearchParams(window.location.search).get("id");
+const details = document.querySelector(".details");
+//
+const BASE_URL = `http://localhost:8080/itCard`;
+////
+async function getData() {
+  try {
+    const response = await axios(`${BASE_URL}/${id}`);
+    console.log(response.data);
+    products = response.data;
+    drawProductCards(response.data);
+  } catch (error) {
+    console.log(error);
+  }
+}
+getData();
+///////////////////
+function drawProductCards(data) {
+  details.innerHTML = "";
+  ///////
+  details.innerHTML += `
+      <div class="productCard">
+      <div>
+      <img
+        src="${data.imageUrl}"
+        alt=""
+        class="product-image"
+      />
+    </div>
+    <h5 class="card-title">${data.title}</h5>
+    <span class="card-description"
+      >${data.description}</span
+    ></div>
+      `;
+}
+
+///////////////////////////////
+/////////////////////////////
+///////////////////////////
+/////////////////////////
+/////FAVORITES JS --> app.js
+
+const searchInput = document.querySelector(".search");
+const BASE_URL = `http://localhost:8080`;
+const products = document.querySelector(".products");
+const favCount = document.querySelector(".fav-count");
+let arr;
+const sort = document.querySelector(".sort");
+
+let productsCopy = [];
+
+const favoritedProducts = getFavoritesFromLocaleStorage();
+
+calculateFavCount(favoritedProducts.length);
+
+async function getProducts(endPoint) {
+  const response = await axios(`${BASE_URL}/${endPoint}`);
+  console.log(response.data);
+  productsCopy = response.data;
+  arr = response.data;
+  
+  drawCards(response.data);
+}
+
+getProducts("products");
+
+function drawCards(data) {
+  products.innerHTML = "";
+
+  data.forEach((element) => {
+    const productCardElement = document.createElement("div");
+    productCardElement.className = "product-card";
+    ///
+    const productTitleDivElement = document.createElement("div");
+    productTitleDivElement.className = "product-card-title";
+    ///
+    const productNameElement = document.createElement("h3");
+    productNameElement.textContent = element.name;
+    ///
+    const favIconElement = document.createElement("i");
+
+    const favoritObj = favoritedProducts.find((item) => item.id === element.id);
+
+    favIconElement.className = favoritObj
+      ? "fa-solid fa-heart"
+      : "fa-regular fa-heart";
+      ///
+    const productPriceElement = document.createElement("p");
+    productPriceElement.innerHTML = `Price: <b>$ ${element.price}</b>`;
+      ///
+    
+
+    const productImageElement = document.createElement("img");
+
+    productImageElement.src = element.imageUrl;
+      //
+    favIconElement.addEventListener("click", function () {
+      this.className === "fa-regular fa-heart"
+        ? (this.className = "fa-solid fa-heart")
+        : (this.className = "fa-regular fa-heart");
+
+      let favorites = getFavoritesFromLocaleStorage();
+
+      const favIndex = favorites.findIndex((item) => item.id === element.id);
+
+      if (favIndex === -1) {
+        favorites.push(element);
+      } else {
+        favorites.splice(favIndex, 1);
+      }
+       ///
+      setProductToLocaleStorage(favorites);
+
+      calculateFavCount(favorites.length);
+    });
+
+    productTitleDivElement.append(favIconElement);
+
+    productCardElement.append(
+      productTitleDivElement,
+      productImageElement,
+      productNameElement,
+      productPriceElement
+    );
+
+    products.append(productCardElement);
+  });
+}
+
+function setProductToLocaleStorage(products) {
+  localStorage.setItem("favs", JSON.stringify(products));
+}
+
+function getFavoritesFromLocaleStorage() {
+  return JSON.parse(localStorage.getItem("favs")) ?? [];
+}
+
+function calculateFavCount(count) {
+  favCount.textContent = count;
+}
+//
+sort.addEventListener("click", function () {
+  productsCopy.sort((a, b) =>
+    a.name.toLocaleLowerCase().localeCompare(b.name.toLocaleLowerCase())
+  );
+  productsCopy.sort((a, b) =>
+    b.name.toLocaleLowerCase().localeCompare(a.name.toLocaleLowerCase())
+  );
+});
+
+////////////////
+searchInput.addEventListener("input", function (e) {
+  e.preventDefault();
+  let filtered = arr.filter((item) =>
+    item.name.toLowerCase().includes(e.target.value.toLowerCase())
+  );
+  drawCards(filtered);
+  console.log(filtered);
+});
+//////////////////////////////
+//////////////////////////////
+//////////////////////////////
+/////FAVORITES JS --> favorites.js
+const BASE_URL = ` http://localhost:8080`;
+const products = document.querySelector(".products");
+const favCount = document.querySelector(".fav-count");
+
+const favoritedProducts = getFavoritesFromLocaleStorage();
+
+drawCards(favoritedProducts);
+function drawCards(data) {
+  products.innerHTML = "";
+
+  data.forEach((element) => {
+    const productCardElement = document.createElement("div");
+    productCardElement.className = "product-card";
+    //
+    const productTitleDivElement = document.createElement("div");
+    productTitleDivElement.className = "product-card-title";
+    //
+    const productNameElement = document.createElement("h3");
+    productNameElement.textContent = element.name;
+    const favIconElement = document.createElement("i");
+
+    const favoritObj = favoritedProducts.find((item) => item.id === element.id);
+
+    favIconElement.className = "fa-solid fa-heart";
+
+    const productPriceElement = document.createElement("p");
+    productPriceElement.innerHTML = `Price: <b>$ ${element.price}</b>`;
+
+    const productImageElement = document.createElement("img");
+
+    productImageElement.src = element.imageUrl;
+
+    favIconElement.addEventListener("click", function () {
+      let favorits = getFavoritesFromLocaleStorage();
+
+      let filtered = favorits.filter((item) => item.id !== element.id);
+
+      setProductToLocaleStorage(filtered);
+      productCardElement.remove();
+    });
+
+    productTitleDivElement.append(favIconElement);
+
+    productCardElement.append(
+      productTitleDivElement,
+      productImageElement,
+      productNameElement,
+      productPriceElement
+    );
+
+    products.append(productCardElement);
+  });
+}
+
+function setProductToLocaleStorage(products) {
+  localStorage.setItem("favs", JSON.stringify(products));
+}
+
+function getFavoritesFromLocaleStorage() {
+  return JSON.parse(localStorage.getItem("favs")) ?? [];
+}
+
