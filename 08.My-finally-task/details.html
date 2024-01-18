@@ -27,7 +27,7 @@
     />
     <!-- ----------------------CSS LINK---------------- -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>My Cosmetics Website</title>
+    <title>Details Page</title>
     <!-- ----------BOOTSTRAPT JS LINK----------------- -->
     <script
       defer
@@ -43,7 +43,19 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- ----------JS LINK----------------- -->
-    <script defer src="./assets/js/main.js"></script>
+    <script defer src="./assets/js/details.js"></script>
+    <style>
+        .product-card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 30px auto;
+        }
+        .product-description{
+            text-align: center;
+        }
+    </style>
   </head>
   <body>
     <!-- -------------------PART 1 ------------------ -->
@@ -73,16 +85,14 @@
     <!-- -------------------PART 2 ------------------ -->
     <section>
       <div class="container">
-        <div class="textDiv">
-          <h3>This is Cosmetics website</h3>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="details">
+          <div class="product-card">
+            <img src="" alt="" class="product-image"/>
+            <h5 class="product-name"></h5>
+            <p class="product-price"></p>
+            <span class="product-description"></span>
+          </div>
         </div>
-
-        <div class="searchSortDiv">
-          <input type="search" placeholder="Search By Name..." class="search"/>
-          <button class="sort">SORT</button>
-        </div>
-        <div class="productCardLists"></div>
       </div>
     </section>
   </body>

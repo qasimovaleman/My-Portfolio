@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- ----------BOOTSTRAPT CSS LINK----------------- -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -27,7 +28,7 @@
     />
     <!-- ----------------------CSS LINK---------------- -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>My Cosmetics Website</title>
+    <title>Admin Panel</title>
     <!-- ----------BOOTSTRAPT JS LINK----------------- -->
     <script
       defer
@@ -43,7 +44,14 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- ----------JS LINK----------------- -->
-    <script defer src="./assets/js/main.js"></script>
+    <script defer src="./assets/js/admin.js"></script>
+    <style>
+      .table-image {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+      }
+    </style>
   </head>
   <body>
     <!-- -------------------PART 1 ------------------ -->
@@ -73,16 +81,43 @@
     <!-- -------------------PART 2 ------------------ -->
     <section>
       <div class="container">
-        <div class="textDiv">
-          <h3>This is Cosmetics website</h3>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
+        <form action="">
+          <input type="file" placeholder="Image Url.." />
+          <input type="text" placeholder="Name.." />
+          <input type="number" placeholder="Price.." />
+          <input type="text" placeholder="Description..">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
 
-        <div class="searchSortDiv">
-          <input type="search" placeholder="Search By Name..." class="search"/>
-          <button class="sort">SORT</button>
-        </div>
-        <div class="productCardLists"></div>
+    <!-- -------------------PART 3 ------------------ -->
+    <section>
+      <div class="container">
+        <table class="table table-success table-striped">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Description</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr> -->
+          </tbody>
+        </table>
       </div>
     </section>
   </body>
