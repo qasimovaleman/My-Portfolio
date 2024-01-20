@@ -1,0 +1,53 @@
+{
+  "tastycard": [
+    {
+      "id": "3",
+      "imageUrl": "https://preview.colorlib.com/theme/tasty/images/dish-4.jpg",
+      "name": "Fruit Vanilla Ice Cream",
+      "description": "Meat, Potatoes, Rice, Tomatoe",
+      "price": 29
+    },
+    {
+      "id": "4",
+      "imageUrl": "https://preview.colorlib.com/theme/tasty/images/dish-11.jpg",
+      "name": "Soup With Vegetables And Meat",
+      "description": "Meat, Potatoes, Rice, Tomatoe",
+      "price": 29
+    },
+    {
+      "id": "5",
+      "imageUrl": "https://preview.colorlib.com/theme/tasty/images/dish-5.jpg",
+      "name": "Asian Hoisin Pork",
+      "description": "Meat, Potatoes, Rice, Tomatoe",
+      "price": 29
+    },
+    {
+      "id": "6",
+      "imageUrl": "https://preview.colorlib.com/theme/tasty/images/dish-8.jpg",
+      "name": "Udon Noodles With Vegetables",
+      "description": "Meat, Potatoes, Rice, Tomatoe",
+      "price": 29
+    },
+    {
+      "id": "ab43",
+      "imageUrl": "./assets/images/dessert-4.jpg",
+      "name": "leman",
+      "description": "gasimova",
+      "price": "20"
+    },
+    {
+      "id": "13f0",
+      "imageUrl": "./assets/images/person_1.jpg",
+      "name": "Kanan",
+      "description": "Amirov",
+      "price": "27"
+    },
+    {
+      "id": "2235",
+      "imageUrl": "./assets/images/bg_3.jpg",
+      "name": "asd",
+      "description": "`adf",
+      "price": "-17"
+    }
+  ]
+}

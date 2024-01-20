@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 20px;
+  left: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerLeft h3 {
+  background-color: transparent;
+  border: 2px solid white;
+  color: #ffffff;
+  padding: 1px 5px;
+  text-align: center;
+}
+nav {
+  display: flex;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+}
+ul a {
+  color: white;
+  text-decoration: none;
+}
+.iconMenu {
+  display: none;
+}
+#sliderSection {
+  height: 80vh;
+}
+.divRelative {
+  position: relative;
+}
+.divAbsolute {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+.divAbsolute h3,
+button {
+  font-family: "Indie Flower", cursive;
+}
+.divAbsolute h3 {
+  font-size: 62px;
+}
+.divAbsolute button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  height: 40px;
+  width: 150px;
+}
+.mySlider {
+  height: 80vh;
+}
+.a {
+  height: 60%;
+}
+#apiSection {
+  margin: 40% 0 0 0;
+  background-color: #dadadd;
+}
+.apiSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.iconTextParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.2rem;
+}
+.iconTextDiv {
+  background-color: white;
+  padding: 15px 25px;
+  margin: 50px;
+}
+.iconTextDiv a {
+  color: #a5a5ab;
+  text-decoration: none;
+}
+.orangeredDiv {
+  background-color: orange;
+}
+.orangeredDiv a {
+  color: #404044;
+}
+.apiSection span {
+  color: #404044;
+  padding-top: 10%;
+}
+.apiSection h3 {
+  color: #404044;
+}
+.productCradLists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 50px;
+}
+.product-card {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px 25px;
+}
+.product-card:hover {
+  background-color: orange;
+}
+
+.product-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.formSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  row-gap: 1rem;
+}
+form input {
+  width: 300px;
+  height: 40px;
+  padding: 6px 16px;
+  border: 1px solid grey;
+}
+form button {
+  height: 40px;
+  width: 80px;
+  border: 2px solid palevioletred;
+  color: palevioletred;
+  background-color: white;
+}
+form button:hover {
+  background-color: palevioletred;
+  color: white;
+}
+.searchSortDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+}
+.bannerSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#bannerSection {
+  margin-top: 30%;
+}
+.bannerLeft {
+  width: 50%;
+}
+.bannerLeft img {
+  width: 100%;
+}
+.bannerRight {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bannerRight span {
+  color: #a5a5ab;
+}
+.bannerRight h3 {
+  color: #404044;
+  text-align: center;
+}
+.bannerRight p {
+  color: #8b8b92;
+  text-align: center;
+}
+.productsCardParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+}
+.productsCardElement {
+  border: 1px solid grey;
+  margin-top: 50px;
+  width: 30%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.productsCardElement img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.imagesDiv {
+  position: absolute;
+  top: -24%;
+  left: 40%;
+}
+.productsText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0;
+}
+.productsCardElement .parag {
+  margin-top: 10%;
+  color: #8b8b92;
+}
+.productsCardElement span {
+  color: #c0c0c3;
+}
+.caruselRelative {
+  position: relative;
+}
+.caruselAbsolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.caruselAbsolute h5,
+p {
+  color: white;
+}
+.blogSection {
+  margin: 50px 0;
+}
+footer {
+  background-color: rgb(41, 37, 37);
+  color: white;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  column-gap: 2rem;
+}
+.footerLeft,
+.footerRight {
+    width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerLeft ul{
+    display: flex;
+    flex-direction: column;
+}
+.searchSortDiv{
+    column-gap: 1rem;
+    margin: 40px 0;
+}
+.searchSortDiv input{
+width: 300px;
+height: 40px;
+border: 1px solid grey;
+padding: 5px 15px;
+}
+.searchSortDiv button{
+    width: 80px;
+    height: 40px;
+    border: 1px solid palevioletred;
+    background-color: white;
+    color: palevioletred;
+}
+.details-button{
+    text-decoration: none;
+    border: 2px solid black;
+    color: black;
+    width: 80px;
+    padding: 3px 15px;
+    height: 40px;
+    
+}
+.details-button:hover{
+    background-color: black;
+    color: white;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 5%;
+  }
+  nav {
+    display: none;
+  }
+  .iconMenu {
+    display: flex;
+    column-gap: 0.4rem;
+  }
+  header {
+    top: 0;
+    background-color: black;
+    color: white;
+  }
+  .product-card {
+    width: 80%;
+  }
+  .bannerSection {
+    flex-direction: column;
+  }
+  .bannerRight {
+    width: 100%;
+  }
+  .bannerLeft {
+    width: 100%;
+  }
+  #bannerSection {
+    margin-top: 0px;
+  }
+  .iconTextParent {
+    flex-direction: column;
+  }
+  .iconTextDiv {
+    width: 100%;
+    margin: 20px;
+  }
+  .footer{
+    flex-direction: column;
+  }
+  .footerLeft, .footerRight{
+    flex-direction: column;
+  }
+  .footerLeft ul{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
